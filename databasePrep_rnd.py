@@ -14,10 +14,11 @@ df['question2'] = df['question2'].apply(lambda x: unicode(str(x),"utf-8"))
 df2['review'] =df2['review'].apply(lambda x: unicode(str(x),"utf-8"))
 
 #divide into train and test set
+trainNum=int(df.shape[0]*0.88)
 testNum=df.shape[0]-trainNum
 df_trainq=df[:][:trainNum]
 df_testq=df[:][trainNum:]
-trainNum=int(df.shape[0]*0.88)
+
 questions = list(df_trainq['question1']) + list(df_trainq['question2']) + list(df2['review'])     
 
 
