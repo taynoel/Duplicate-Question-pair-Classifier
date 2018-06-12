@@ -6,3 +6,5 @@ sentenceSimilarity.py contains code for training (word embedding, idf and random
 
 SiameseNet.py trains a siamese network classifier in PyTorch (it needs data from decisionTreeTrainingData.npy, which can be generated from tempPrepDataforDecisionTreeTraining()function in sentenceSimilarity.py).
 
+biRnnCpu_Train.py trains bi-drectional LSTM simases network (requires word embedding model from sentenceSimilarity.py)
+
